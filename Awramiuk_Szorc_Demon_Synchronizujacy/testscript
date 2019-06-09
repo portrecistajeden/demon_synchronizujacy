@@ -1,0 +1,14 @@
+#!/bin/bash
+mkdir SourceDirectory
+mkdir TargetDirectory
+mkdir SourceDirectory/A
+touch SourceDirectory/A/d.txt
+touch SourceDirectory/a.txt
+echo 'Tresc pliku a.txt' >> SourceDirectory/a.txt
+dd if=/dev/zero of=SourceDirectory/duzy_plik.txt bs=1GB count=1
+mkdir TargetDirectory/B
+touch TargetDirectory/B/b.txt
+echo 'Tresc pliku b.txt' >> TargetDirectory/B/b.txt
+touch TargetDirectory/e.txt
+
+
